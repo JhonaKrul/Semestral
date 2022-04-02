@@ -1,0 +1,43 @@
+
+.nav-link:hover {
+    background-color: grey;
+    color: white;
+} 
+
+.nav-link {
+    color: white;
+} 
+
+.nav-link:hover .fa {
+    transition: all 1s;
+    transform: rotate(360deg);
+    font-size: 20px;
+}
+
+.activo {
+    background-color: grey !important
+}
+
+.activo {
+    background-color: grey !important
+}
+
+.color-izq  {
+    background-color: rgb(92, 0, 0) !important
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.perfil{
+    background-image: url(../img/sol-calor.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+hr{
+    color: white;
+}
