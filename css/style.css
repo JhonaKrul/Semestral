@@ -1,25 +1,17 @@
 
 .nav-link:hover {
-    background-color: grey;
+    font-size: 125%;
     color: white;
 } 
 
 .nav-link {
-    color: white;
+    color: rgb(107, 107, 107);
 } 
 
 .nav-link:hover .fa {
     transition: all 1s;
     transform: rotate(360deg);
     font-size: 20px;
-}
-
-.activo {
-    background-color: grey !important
-}
-
-.activo {
-    background-color: grey !important
 }
 
 .color-izq  {
@@ -38,8 +30,8 @@ body {
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
-
-    background-repeat: no-repeat;
+    
+    background-repeat: repeat;
     background-size: cover;
 
     position: absolute;
@@ -461,3 +453,127 @@ a:hover {
     background-position-x: 95%;
     background-position-y: center
 }
+
+/* stock */
+
+h5{
+    color: #b3b3b3
+  }
+  
+  body {
+    background-color: #B3E5FC;
+    border-radius: 10px
+  }
+  
+  .card {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(24, 24, 24, 0.979)
+  }
+  
+  .text1 {
+    font-size: 13px;
+    color: #ffffff
+  }
+  
+  .info {
+    line-height: 17px
+  }
+  
+  .cost span {
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px
+  }
+  
+  .star {
+    color: #FBC02D
+  }
+  
+  .watchcost span {
+    color: #286783;
+    font-weight: bold;
+    font-size: 20px
+  }
+  
+  .watch {
+    background: #286783
+  }
+  
+  .tshirtcost span {
+    color: #0012b2;
+    font-weight: bold;
+    font-size: 20px
+  }
+  
+  .tshirt {
+    background-color: #0012b2
+  }
+  
+  .cursor {
+    cursor: pointer
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: max-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  

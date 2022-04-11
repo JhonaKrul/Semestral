@@ -14,143 +14,355 @@
 <!-- CUERPO -->
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-success bg-gradient navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/jardinieria logo .png" width="100" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Venta</a>
-                    </li>
-                    <li class="nav-item mt-1">
-                        <a class="nav-link" href="Seguimiento.html"><i class="fa fa-map-marker"></i> Seguimiento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+  <nav class="navbar navbar-expand-sm bg-success bg-gradient navbar-dark">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2 bg-dark" style="min-height: 100vh;">
-                <ul class="nav nav-pills flex-column mt-1">
-                    <li class="nav-item mt-1">
-                      <a class="nav-link activo" href="#"><i class="fa fa-home"></i> Inicio</a>
-                    </li>
-                    <li class="nav-item mt-1">
-                      <a class="nav-link" href="#"><i class="fa fa-graduation-cap"></i> Productos</a>
-                    </li>
-                    <li class="nav-item mt-1">
-                      <a class="nav-link" href="#"><i class="fa fa-book"></i> Venta</a>
-                    </li>
-                    <li class="nav-item mt-1">
-                      <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Modalini"><i class="fa fa-right-to-bracket"></i> Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item mt-1">
-                        <a class="nav-link" href="Seguimiento.html"><i class="fa fa-map-marker"></i> Seguimiento</a>
-                      </li>
-                    <li class="nav-item mt-1">
-                        <a class="nav-link" href="#"><i class="fa fa-right-from-bracket"></i> Cerrar Sesión</a>
-                      </li>
-                  </ul>
-                </div>
-                <div class="card">
-                    <div class="row">
-                        <div class="col-md-8 cart">
-                            <div class="title">
-                                <div class="row">
-                                    <div class="col">
-                                        <h4><b>CARRITO</b></h4>
-                                    </div>
-                                    <div class="col align-self-center text-right text-muted">3 Productos</div>
-                                </div>
-                            </div>
-                            <div class="row border-top border-bottom">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="img-fluid" src="img/Planta.png"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Planta</div>
-                                        <div class="row">Planta 100% real no fake entera wena</div>
-                                    </div>
-                                    <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
-                                    <div class="col">&dollar; 2.000 <span class="close">&#10005;</span></div>
-                                </div>
-                            </div>
+        <a class="navbar-brand" href="index_loged.html"><img src="img/jardinieria logo .png" width="100" alt="" onload="closeNav()"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item mt-1">
+                <a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart"></i> Carrito</a>
+              </li>
+              <li class="nav-item mt-1">
+                <a class="nav-link" href="Historial Compra.html"><i class="fa fa-book"></i> Historial Compra </a>
+              </li>
+              <li class="nav-item mt-1">
+                <a class="nav-link" href="Profile.html"><i class="fa fa-user"></i> Mi Perfil </a>
+              </li>
+                <li class="nav-item mt-1">
+                  <a class="nav-link" href="index_no_loged.html"><i class="fa fa-right-from-bracket"></i> Out</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="container-fluid p-0">
+      <div class="row">
+          <div class="col-sm-2 bg-dark" style="min-height: 100vh;">
+              <ul class="nav nav-pills flex-column mt-1">
+                <li class="nav-item mt-1">
+                  <a class="nav-link" href="index_loged.html"><i class="fa fa-home"></i> Inicio</a>
+                </li>
+
+                <li class="nav-item mt-1">
+                  <a class="nav-link " href="Stock page 1.html"><i class="fa fa-graduation-cap"></i> Productos</a>
+                </li>
+
+                <li class="nav-item mt-1">
+                  <a class="nav-link" href="Seguimiento.html"><i class="fa fa-map-marker"></i> Seguimiento</a>
+                </li>
+                  <li class="nav-item mt-1">
+                    <a class="nav-link activo" href="Suscripcion.html"><i class="fa fa-sun-plant-wilt"></i> Suscripcion</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item mt-1">
+                    <a class="nav-link" href="index_no_loged.html"><i class="fa fa-right-from-bracket"></i> Cerrar Sesión</a>
+                  </li>
+                </ul>
+              
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-8 cart">
+                        <div class="title">
                             <div class="row">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="img-fluid" src="img/macetero.png"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Macetero</div>
-                                        <div class="row">Macetero entero bkn entero weno</div>
-                                    </div>
-                                    <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
-                                    <div class="col">&dollar; 850 <span class="close">&#10005;</span></div>
+                                <div class="col">
+                                    <h4><b>CARRITO</b></h4>
                                 </div>
+                                <div class="col align-self-center text-right text-muted">3 Productos</div>
                             </div>
-                            <div class="row border-top border-bottom">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="img-fluid" src="img/palita.png"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Pala</div>
-                                        <div class="row">Pala jardin del poder LEGENDARIO</div>
-                                    </div>
-                                    <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
-                                    <div class="col">&dollar; 2.500 <span class="close">&#10005;</span></div>
+                        </div>
+                        <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="img/Planta.png"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Planta</div>
+                                    <div class="row">Planta 100% real no fake entera wena</div>
                                 </div>
+                                <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                                <div class="col">&dollar; 2.000 <span class="close">&#10005;</span></div>
                             </div>
-                            <div class="back-to-shop"><a href="index.html">&leftarrow;</a><span class="text-muted">Volver a comprar</span></div>
                         </div>
-                        <div class="col-md-4 summary">
-                            <div>
-                                <h5><b>Resumen</b></h5>
+                        <div class="row">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="img/macetero.png"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Macetero</div>
+                                    <div class="row">Macetero entero bkn entero weno</div>
+                                </div>
+                                <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                                <div class="col">&dollar; 850 <span class="close">&#10005;</span></div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col" style="padding-left:0;">3 Productos</div>
-                                <div class="col text-right">&dollar; 5.350</div>
-                            </div>
-                            <form>
-                                <p>ENVIO</p> <select>
-                                    <option class="text-muted">Envio- &dollar; 3.000</option>
-                                </select>
-                            </form>
-                            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                                <div class="col">PRECIO TOTAL</div>
-                                <div class="col text-right">&dollar; 8.350</div>
-                            </div> <button class="btn">Comprar</button>
                         </div>
+                        <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="img/palita.png"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Pala</div>
+                                    <div class="row">Pala jardin del poder LEGENDARIO</div>
+                                </div>
+                                <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                                <div class="col">&dollar; 2.500 <span class="close">&#10005;</span></div>
+                            </div>
+                        </div>
+                        <div class="back-to-shop"><a href="index_loged.html">&leftarrow;</a><span class="text-muted">Volver a comprar</span></div>
+                    </div>
+                    <div class="col-md-4 summary">
+                        <div>
+                            <h5><b>Resumen</b></h5>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col" style="padding-left:0;">3 Productos</div>
+                            <div class="col text-right">&dollar; 5.350</div>
+                        </div>
+                        <form>
+                            <p>ENVIO</p> <select>
+                                <option class="text-muted">Envio- &dollar; 3.000</option>
+                            </select>
+                        </form>
+                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                            <div class="col">PRECIO TOTAL</div>
+                            <div class="col text-right">&dollar; 8.350</div>
+                        </div> <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
                     </div>
                 </div>
-                        
-                       
-                </div>
+            </div>
+                    
+                   
             </div>
         </div>
     </div>
-    
+</div>
 
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
 
-<div class="p-3 text-white bg-success bg-gradient">
-    <div class="d-flex justify-content-between align-items-center">
-        <img src="img/jardinieria logo .png" alt="" width="150">
-            <br> Hecho por: <br> Jhonatan Obreque <br> Boris Cardenas <br> Carlos Leebsey
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Confirmacion</h4>
     </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+    ¡Compra Hecha con éxito!
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+
+  </div>
+</div>
+</div>
+    
+  <!-- Modal login -->
+  <div class="modal fade" id="Modalini">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Inicio de Sesión</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="index_loged.html" method="get">
+              <div class="form-group"> 
+                <label for="txtUser">Correo:</label>
+                <input placeholder="Ej: Javier@correo.com" class="form-control" type="text" id="txtUser" name="txtUser">
+            </div>
+
+
+            <div class="form-group">
+                <label for="txtPass">Contraseña:</label>
+                <input placeholder="Ej: uwu123" class="form-control " type="password" id="txtPass" name="txtPass"> 
+            </div>
+
+            <input class="btn btn-primary mt-2" type="submit" id="btnEnviar" name="btnEnviar">
+            <input class="btn btn-danger mt-2" type="reset" id="btnLimpiar" name="btnLimpiar">
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+  </div>
+    <!-- Modal login -->
+    <div class="modal fade" id="Modalini2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Registro</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+              <form action="index_loged.html" method="get">
+                <div class="form-group"> 
+                  <label for="txtUser">Correo:</label>
+                  <input placeholder="Ej: Javier@correo.com" class="form-control" type="text" id="txtUser" name="txtUser">
+              </div>
+              
+  
+              <div class="form-group">
+                  <label for="txtPass">Contraseña:</label>
+                  <input placeholder="Ej: uwu123" class="form-control " type="password" id="txtPass" name="txtPass"> 
+              </div>
+              <div class="form-group">
+                <label for="txtPass">Nombres:</label>
+                <input placeholder="Ej: juan carlos" class="form-control " type="password" id="txtPass" name="txtPass"> 
+            </div>
+            <div class="form-group">
+              <label for="txtPass">Apellidos:</label>
+              <input placeholder="Ej: bodoque god" class="form-control " type="password" id="txtPass" name="txtPass"> 
+          </div>
+              <input class="btn btn-primary mt-2" type="submit" id="btnEnviar" name="btnEnviar">
+              <input class="btn btn-danger mt-2" type="reset" id="btnLimpiar" name="btnLimpiar">
+              </form>
+            </div>
+  
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+    </div>
+ 
+
+    
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #21D192"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>No olvides visitar nuestras redes sociales:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://es-la.facebook.com/ventadeplantas1234/" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/floresiplantas?lang=es" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/todoplantaspierola/?hl=es" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/JhonaKrul/Semestral" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Limpieza y Jardineria</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Somos una tienda dedicada a la venta de flores y plantas
+              que tambien cuenta con la opcion de que puedas agregar tus
+              propios productos a la venta
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Links Utiles</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">Tu cuenta</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Suscribete</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Comentarios</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Ayuda</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contacto</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Av. Concha Y Toro, Av. San Carlos 1340, Puente Alto</p>
+            <p><i class="fas fa-envelope mr-3"></i> jh.obreque@duocuc.cl</p>
+            <p><i class="fas fa-envelope mr-3"></i> bor.cardenas@duocuc.cl</p>
+            <p><i class="fas fa-envelope mr-3"></i> ca.leebsey@duocuc.cl</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+        </div>
 </div>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <!-- FOOTER -->
-</htm
+</html>
